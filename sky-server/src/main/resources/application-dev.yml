@@ -5,4 +5,17 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: root
+    password: ${SKY_DB_PASSWORD:123456}
+  alioss:
+    endpoint: ${SKY_OSS_ENDPOINT:}
+    bucket-name: ${SKY_OSS_BUCKET:}
+    access-key-secret: ${SKY_OSS_SECRET:}
+    access-key-id: ${SKY_OSS_KEY:}
+  redis:
+    host: localhost
+    port: 6379
+    password: ${SKY_REDIS_PASSWORD:}
+    database: 10
+  wechat:
+    appid: ${SKY_WECHAT_APPID:}
+    secret: ${SKY_WECHAT_SECRET:}

@@ -1,9 +1,12 @@
 package com.sky.dto;
 
+import io.swagger.annotations.Api;
 import lombok.Data;
 
 import java.io.Serializable;
 
+
+@Api(tags = "员工分页查询传递的数据模型")
 @Data
 public class EmployeePageQueryDTO implements Serializable {
 
